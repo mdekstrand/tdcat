@@ -8,17 +8,18 @@ license = "MIT"
 [dependencies]
 # basic infra
 log = "^0.4"
-stderrlog = { version="^0.5", optional=true }
-structopt = { version="^0.3", optional=true }
-anyhow = { version="1.0.57", optional=true }
 
 # Data type support
 csv-sniffer = "^0.3"
 csv = "^1.1"
 parquet2 = "^0.13"
 
+# libraries for CLI
+stderrlog = { version="^0.5", optional=true }
+structopt = { version="^0.3", optional=true }
+anyhow = { version="1.0.57", optional=true }
+
 [features]
-default = ["cli"]
 cli = ["stderrlog", "structopt", "anyhow"]
 
 [[bin]]
