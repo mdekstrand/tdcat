@@ -1,3 +1,7 @@
+mod schema;
+mod tabdata;
+mod formats;
+
 use structopt::StructOpt;
 use anyhow::Result;
 
